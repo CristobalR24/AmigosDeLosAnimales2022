@@ -1,0 +1,29 @@
+:root{--celeste:#99D7F1;
+    --celeste_oscuro:#1299B7;}
+
+@font-face {
+    font-family: "atma";
+    src: url("../fonts/Atma-Regular.ttf");
+}
+
+@font-face {
+    font-family: "josefin";
+    src: url("../fonts/JosefinSans-Regular.ttf");
+}
+
+html{box-sizing: border-box;}
+
+body{padding: 0 !important;
+     margin: 0 !important;}
+
+.titulo_header{cursor: pointer;}
+
+.bg-celeste{background-color: var(--celeste);}
+.bg-dark-celeste{background-color: var(--celeste_oscuro);}
+
+.nav-item{cursor: pointer;}
+.navbar-nav a{color:#ffffff !important;
+            font-family: 'josefin';}
+
+.navbar-nav a:hover{color:#505050 !important;
+    font-family: 'josefin';}
