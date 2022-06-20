@@ -10,27 +10,52 @@
     <link rel="icon" href="img/recursos/logo.ico">
 </head>
 <body class="container-fluid bg-celeste">
-    <header class="row" >
-        <div class="col">
-            <img class="img-fluid" src="../amigos de los animales/img/recursos/logo.png" width="150rem"/>
-            <img class="img-fluid titulo_header" src="../amigos de los animales/img/recursos/Amigos de los Animales.png" width="350rem"/>
+    <header class="row g-0" >
+        <div class="col-md-7 col-sm-12">
+            <img class="p-menu-pequeno" id="menu" onclick="abrirMenu()" src="img/recursos/menu-icon.png">
+            <a href="index.html"><img class="img-fluid logo_header" src="img/recursos/logo.png" width="150rem"/></a>
+            <a href="index.html"><img class="img-fluid titulo_header" src="img/recursos/Amigos de los Animales.png" width="350rem"/></a>
         </div>
-        <div class="col d-flex align-items-center justify-content-end">
-            <button class="btn btn-primary me-3">Ser hogar temporal</button>
-            <button class="btn btn-primary me-3">Adoptar</button>
+        <div class="col-md-5 d-flex align-items-center justify-content-end">
+            <button class="btn btn-propio-plan btn-a me-4 px-3">Ser hogar temporal</button>
+            <button class="btn btn-propio-plan btn-b me-4 px-5">Adoptar</button>
         </div>
     </header>
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav id="barra" class="navbar navbar-expand-lg navbar-light">
         <ul class="navbar-nav w-100 mt-0 d-flex justify-content-center">
-            <li class="nav-item bg-dark-celeste w-25 me-2 text-center"><a class="nav-link text-light">INICIO</a></li>
-            <li class="nav-item bg-dark-celeste w-25 me-2 text-center"><a class="nav-link">AYÚDANOS</a></li>
-            <li class="nav-item bg-dark-celeste w-25 me-2 text-center"><a class="nav-link">CONTÁCTANOS</a></li>
+            <li class="nav-item bg-dark-celeste w-25 me-md-2 text-center"><a class="nav-link">INICIO</a></li>
+            <li class="nav-item bg-dark-celeste w-25 me-md-2 text-center"><a class="nav-link">AYÚDANOS</a></li>
+            <li class="nav-item bg-dark-celeste w-25 me-md-2 text-center"><a class="nav-link">CONTÁCTANOS</a></li>
             <li class="nav-item bg-dark-celeste w-25 text-center"><a class="nav-link">QUIENES SOMOS</a></li>
+            <li class="nav-item bg-azul opc-secundaria me-md-2 text-center"><a class="nav-link">SER HOGAR TEMPORAL</a></li>
+            <li class="nav-item bg-azul opc-secundaria me-md-2 text-center"><a class="nav-link">ADOPTAR</a></li>
         </ul>
     </nav>
-    
-    <footer>
-        ¡Encuentra a cientos de animales en adopción con Amigos de los animales!
-    </footer>
+    <br><br><br><br><br><br>
+    <br><br><br><br><br><br>
+    <br><br>
+
+    <footer class="row g-0" style="height: fit-content;">
+        <div class="col-md-9 col-sm-12">
+            <div class="text-md-end text-center mt-2 mb-3">
+                <span class="fo-texto-a">¡Encuentra a cientos de animales en adopción con Amigos de los animales!</span>
+            </div>
+            <div class="row g-0 mt-3 mb-3">
+                <div class="col-md-6 col-sm-12 fo-texto-b text-center ms-md-3">
+                    Correo electronico: <a class="fo-none" href="mailto:aaanpanamaong@gmail.com">aaanpanamaong@gmail.com</a>
+                    <br>
+                    Instagram: <a class="fo-none" href="https://www.instagram.com/amigosdelosanimalespty/">@amigosdelosanimalespty</a>
+                </div>
+                <div class="col d-flex align-items-center justify-content-end">
+                    <button class="sm-off btn-entrar-admin px-3 py-1" style="vertical-align: middle;">Entrar como administrador</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-12 d-flex text-md-end justify-content-md-end justify-content-center align-items-center">
+            <button class="sm-on lg-off btn-entrar-admin px-2 py-1" style="vertical-align: middle;">Entrar como administrador</button>
+            <a href="index.html"><img class=" overflow-scroll img-fluid me-md-3" src="img/recursos/logo.png" width="130rem"/></a>
+        </div>
+    </footer> 
 </body>
+<script src="js/base.js"></script>
 </html>

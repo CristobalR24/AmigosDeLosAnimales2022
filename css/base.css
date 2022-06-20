@@ -1,5 +1,7 @@
 :root{--celeste:#99D7F1;
-    --celeste_oscuro:#1299B7;}
+    --celeste_oscuro:#1299B7;
+    --azul:#0167F8;
+    --azul_oscuro:#2225EA;}
 
 @font-face {
     font-family: "atma";
@@ -18,12 +20,96 @@ body{padding: 0 !important;
 
 .titulo_header{cursor: pointer;}
 
+.bg-azul{background-color: var(--azul);}
 .bg-celeste{background-color: var(--celeste);}
 .bg-dark-celeste{background-color: var(--celeste_oscuro);}
 
 .nav-item{cursor: pointer;}
+
+.nav-item a:hover{background-color: var(--celeste_oscuro);
+                transform:translateY(-5px);
+                transition: 0.2s;}
+
 .navbar-nav a{color:#ffffff !important;
             font-family: 'josefin';}
 
 .navbar-nav a:hover{color:#505050 !important;
     font-family: 'josefin';}
+
+.btn-propio-plan{letter-spacing: 1px;
+                color:#ffffff;
+                border-radius: 15px;
+                font-family: "josefin";}
+
+    .btn-propio-plan:hover{color:#ffffff;}
+
+.btn-a{background-color: var(--azul);}
+
+    .btn-a:hover{background-color: #0158d3;
+        transform: scale(1.1);}
+
+    .btn-a:active{background-color: #003886;
+            transform: scale(1.0);}
+
+.btn-b{background-color: var(--azul_oscuro);}
+
+    .btn-b:hover{background-color: #1d20d1;
+        transform: scale(1.1);}
+
+    .btn-b:active{background-color: #003886;
+            transform: scale(1.0);}
+
+
+footer{background-color: rgb(217, 217, 217, .42)}
+
+.fo-texto-a{color: var(--azul);
+            font-family: 'josefin';
+            font-size: 1.5rem;}
+
+.fo-texto-b{color: var(--celeste_oscuro);
+        font-family: 'josefin';
+        font-size: 1rem;}
+
+.btn-entrar-admin{background-color: #ffffff;
+                    color:var(--azul_oscuro);
+                    border-radius: 20px;
+                    font-weight: bold;
+                    border:0;
+                    font-family: 'josefin';}
+
+.btn-entrar-admin:hover{background-color: #79b6f0;
+                    transition: 0.4s;}
+
+.fo-none{text-decoration: none;
+        color: inherit;}
+
+.btn:focus,.btn:active {
+    outline: none !important;
+    box-shadow: none;}
+
+.p-menu-pequeno{width: 3rem;}
+
+@media screen and (max-width:700px){
+    .nav-item{width: 100%!important;
+            margin: 0!important;}
+
+    .logo_header{width: 25%;}
+
+    .titulo_header{width: 50%;}
+
+    .btn-propio-plan{display: none;}
+
+    .sm-off{display: none;}
+    .sm-on{display: block;}
+
+    .fo-texto-a{font-size: 1rem;}
+
+    #barra{display: none;}
+}
+
+@media screen and (min-width:701px){
+    .p-menu-pequeno{display: none;}
+    .opc-secundaria{display: none;}
+
+    .lg-off{display: none;}
+}
