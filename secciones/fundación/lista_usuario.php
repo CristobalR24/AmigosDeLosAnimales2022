@@ -30,39 +30,36 @@
 
         <form>
             <input id="busqueda" type="search">
-            <button>Perro</button>
-            <button>Gato</button>
-            <button>Adopción</button>
-            <button>Hogar temporal</button>
             <br>
             <table>
                 <tr>
-                    <th>Mascota solicitada</th>
-                    <th>Tipo de solicitud</th>
-                    <th>Solicitado por</th>
-                    <th>Fecha</th>
+                    <th>Nombre</th>
+                    <th>Cédula</th>
+                    <th>Contraseña</th>
                 </tr>
                 <tr>
-                    <td>Negrito</td>
-                    <td>Adopción</td>
                     <td>Nombre Apellido</td>
-                    <td>11-10-2022</td>
-                    <td><button>Ver información</button></td>
+                    <td>0-000-000</td>
+                    <td>0-000-000</td>
+                    <td><button>Editar</button></td>
+                    <td><button>Eliminar</button></td>
+                    
                 </tr>
                 <tr>
-                    <td>Negrito</td>
-                    <td>Adopción</td>
                     <td>Nombre Apellido</td>
-                    <td>11-10-2022</td>
-                    <td><button>Ver información</button></td>
+                    <td>0-000-000</td>
+                    <td>123124</td>
+                    <td><button>Editar</button></td>
+                    <td><button>Eliminar</button></td>
                 </tr>
                 <tr>
-                    <td>Negrito</td>
-                    <td>Adopción</td>
                     <td>Nombre Apellido</td>
-                    <td>11-10-2022</td>
-                    <td><button>Ver información</button></td>
+                    <td>0-000-000</td>
+                    <td>123124</td>
+                    <td><button>Editar</button></td>
+                    <td><button>Eliminar</button></td>
                 </tr>
+
             </table>
         </form>
     </main>
