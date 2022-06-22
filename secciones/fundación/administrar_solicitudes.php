@@ -24,9 +24,10 @@
         </nav>
     </aside>
     <main>
-        <h1>Usuarios</h1>
-        <a href="crear_usuario.php">Crear usuario</a>
-        <a href="lista_usuario.php">Lista de usuarios</a>
+        <h1>Solicitudes</h1>
+        <a href="#">En espera</a>
+        <a href="#">Aprobadas</a>
+        <a href="#">Rechazadas</a>
 
         <form>
             <input id="busqueda" type="search">
