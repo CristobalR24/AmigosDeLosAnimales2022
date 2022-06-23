@@ -1,0 +1,75 @@
+@font-face {
+    font-family: "helvetica-bold";
+    src: url("../fonts/HelveticaNeue-Bd.otf");
+}
+
+.titulo-login{font-family: 'helvetica-bold';
+            cursor:default;}
+
+body{background: linear-gradient(90deg, #99D7F1 50%, #1177BF 50%);
+    display: flex;
+    justify-content: center;
+    min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+    min-height: 100vh; /* Estas dos lineas cuentan como una      */}
+
+.contenedor-form{border-radius: 15px;   
+                margin: auto;
+                overflow: hidden;}
+
+.img-logo{cursor: pointer!important;}
+.img-lado{object-fit: cover;
+    height: 35rem;
+    width: 100%;}    
+
+.grupo-icono{position: relative;
+            margin: auto;
+            margin-bottom: 1rem;
+            width: 75%;
+            color: #1177BF;
+            border: solid black 0px;}
+
+.grupo-icono input{width: 100%;
+                padding: 0.5rem;
+                color: #1177BF;
+                box-sizing: border-box;
+                padding-left: 3rem;
+                outline: 0;
+                background:none;
+                border-width: 0 0 1px;}
+
+.grupo-icono i{position: absolute;
+            left: 0;
+            top:1rem;
+            padding: 0 10px;}
+
+
+.btn-entrar{font-family: 'helvetica-bold';
+            font-size: 1.4rem;
+            background: #1177BF;
+            color: #ffffff;
+            font-weight: bold;
+            border: none;
+            border-radius: 25px;
+            padding: 0.3rem 3rem 0.3rem 3rem;}
+
+.btn-entrar:hover{
+    background: #0d5a91;
+    color: #ffffff;
+    
+    transition: 0.3s;}
+
+.btn-entrar:active{
+    transform: translate(0, 5px);
+    transition: 0.3s;}
+
+.linea{
+        width: 75%;
+        margin: auto;
+        margin-top: 2rem;
+        border-top: solid #D9D9D9 2px;
+        padding-top: 0.5rem;}
+
+.linea a{text-decoration: none;
+        color: #8F8F8F;}
+
+.linea a:hover{color:#1177BF}

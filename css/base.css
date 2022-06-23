@@ -1,7 +1,8 @@
 :root{--celeste:#99D7F1;
     --celeste_oscuro:#1299B7;
     --azul:#0167F8;
-    --azul_oscuro:#2225EA;}
+    --azul_oscuro:#2225EA;
+    --azul_boton:#1177BF;}
 
 @font-face {
     font-family: "atma";
