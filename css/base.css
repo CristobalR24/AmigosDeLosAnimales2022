@@ -170,10 +170,12 @@ footer{background-color: rgb(217, 217, 217, .42)}
                 margin-right: 1rem;
                 height: 2rem;}
 
+.seleccionado{background-color: #d9d9d9;
+                border-left:5px solid #1177BF!important;}
+
 
 .sidebar li:hover{background-color: #d9d9d9;
-                    border-left:5px solid blue!important;
-                    width: 100%;}
+                    border-left:5px solid #1177BF!important;}
 
 .sidebar a{color: #000000;
         text-decoration: none;}
