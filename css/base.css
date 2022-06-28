@@ -190,10 +190,10 @@ footer{background-color: rgb(217, 217, 217, .42)}
 .contenido-admin-encabezado .icono{fill: #1177BF;
                                 vertical-align: middle;
                                 overflow: hidden;
-                                margin-left: 1rem;
-                                height: 5rem;}
+                                margin-left: 2rem;
+                                height: 3rem;}
 
-.contenido-admin-encabezado h1{margin-left: 1rem;
+.contenido-admin-encabezado h1{margin-left: 2rem;
                             font-family:'helvetica';
                             font-weight: bold;}
 
