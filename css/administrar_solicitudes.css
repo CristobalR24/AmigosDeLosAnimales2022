@@ -1,0 +1,38 @@
+:root{--celeste:#99D7F1;
+    --celeste_oscuro:#1299B7;
+    --azul:#0167F8;
+    --azul_oscuro:#2225EA;
+    --azul_borde:#1177BF;}
+
+div button{
+    margin-left: 1rem;
+}
+
+@font-face {
+    font-family: "helvetica-bold";
+    src: url("../fonts/HelveticaNeue-Bd.otf");
+}
+
+a{
+    font-family: 'helvetica-bold';
+    color: #000000;
+    text-decoration: none;
+}
+
+a:hover{
+    color: var(--azul_borde);
+    text-decoration: none;
+}
+
+.table {
+    color: #000000;
+}
+
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+    color: var(--azul_borde);
+}
+
+.btn btn-primary:hover{
+    background-color: var(--celeste);
+    color: white;
+}
