@@ -170,12 +170,27 @@ footer{background-color: rgb(217, 217, 217, .42)}
                 margin-right: 1rem;
                 height: 2rem;}
 
+.sidebar .icono2{fill: #8f8f8f;
+    vertical-align: middle;
+    overflow: hidden;
+    margin-right: 1rem;
+    height: 2rem;}  
+
+.cerrar-sesion{color: #8f8f8f;}
+
 .seleccionado{background-color: #d9d9d9;
+                color: #1177BF;
                 border-left:5px solid #1177BF!important;}
 
 
 .sidebar li:hover{background-color: #d9d9d9;
+                    color: #1177bf!important;;
                     border-left:5px solid #1177BF!important;}
+
+                    .sidebar li:hover .cerrar-sesion{
+                        color: #1177bf!important;}
+
+.sidebar li:hover .icono2{fill: #1177BF;}
 
 .sidebar a{color: #000000;
         text-decoration: none;}
@@ -189,9 +204,9 @@ footer{background-color: rgb(217, 217, 217, .42)}
 
 .contenido-admin-encabezado .icono{fill: #1177BF;
                                 vertical-align: middle;
-                                overflow: hidden;
+                                overflow: visible;
                                 margin-left: 2rem;
-                                height: 3rem;}
+                                height: 3.5rem;}
 
 .contenido-admin-encabezado h1{margin-left: 2rem;
                             font-family:'helvetica';
@@ -203,5 +218,8 @@ footer{background-color: rgb(217, 217, 217, .42)}
         margin-right: 2rem;}
 
 .adm-menu-sm{cursor: pointer;} 
+
+.col-md-3-2 { width: 20.8rem; }
+.col-md-9-2 { width: 75.83%; }
 
 html,body{height: 100%;}
