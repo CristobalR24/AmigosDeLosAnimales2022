@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../css/bootstrap.min.css">
     <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="../../css/crear_usuario.css">
     <link rel="icon" href="../../img/recursos/logo.ico">
     <title>Crear Usuario</title>
 </head>
