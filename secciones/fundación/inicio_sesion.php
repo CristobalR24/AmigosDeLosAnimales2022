@@ -12,27 +12,27 @@
 </head>
 
 <body>    
-    <div class="container bg-light contenedor-form shadow-lg" style="height:fit-content;">
+    <div class="container bg-light contenedor-form " style="height:fit-content;">
         <div class="row">
             <div class="col-md-6 col-sm-12 text-center">
                 <img class="img-fluid w-25 img-logo" src="../../img/recursos/logo.png">
                 <form action="administrar_solicitudes.php">
                     <h1 class="titulo-login">INICIO DE SESIÓN</h1>
                     <div class="grupo-icono mt-5">
-                        <input type="text" placeholder="Cédula"/>
+                        <input class="entrada mt-1" id="cedula" type="text" placeholder="Cédula" onchange="cambio_color" />
                         <i class="fa-solid fa-user"></i>
                     </div>
                     <br>
                     
                     <div class="grupo-icono">
-                        <input type="password" placeholder="Contraseña"/>
+                        <input class="entrada mt-1" type="password" placeholder="Contraseña"/>
                         <i class="fa-solid fa-key"></i>
                     </div>
                     <br>
                     <a><button class="btn-entrar shadow">ENTRAR</button></a>
                     <br>
-                    <div class="linea mb-4 mb-md-0">
-                        <a href="../../index.html">Volver a la página principal</a>
+                    <div class="mb-4 mb-md-0" id="linea">
+                        <a href="../../index.html" id="volver">Volver a la página principal</a>
                     </div>
                 </form>
             </div>
@@ -44,3 +44,15 @@
    
 </body>
 </html>
+<script>
+    let linea = document.getElementById("linea");
+    let volver = document.getElementById("volver");
+
+    volver.addEventListener("mouseover", function( event ) {
+        linea.style.borderTopColor="#1177bf";
+        linea.style.transition="0.5s";
+    });
+    volver.addEventListener("mouseout", function( event ) {
+        linea.style.borderTopColor="#D9D9D9";
+    });
+</script>
