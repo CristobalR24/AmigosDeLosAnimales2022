@@ -32,7 +32,71 @@ a:hover{
     color: var(--azul_borde);
 }
 
-.btn btn-primary:hover{
-    background-color: var(--celeste);
+.btn-opcion{
+    color: #8F8F8F;
+    border-color: #D9D9D9;
+    background-color: white;
+    border-radius: 15px;
+    height: 40px;
+    top: 245px;
+    bottom: 972px;
+    border-style: ridge;
+}
+
+.btn-opcion:hover{
+    background-color: #8F8F8F;
     color: white;
 }
+
+.btn-ver-info{
+    color: white;
+    background-color: var(--azul_borde);
+    font-family: 'helvetica-bold';
+    width: 151px;
+    height: 32px;
+    top: 12px;
+    left: 770px;
+    border-radius: 10px;
+    border-color: var(--azul_borde);
+    border-style: ridge;
+}
+
+.btn-ver-info:hover{
+    color: var(--azul_borde);
+    background-color: white;
+    border-color: var(--azul_borde);
+}
+
+#encabezado{
+    border: 1px solid var(--azul_borde);
+    color: var(--azul_borde);
+    font-family: 'helvetica-bold';
+    font-size: 1rem;
+    border-radius: 20px;
+    margin: 10px;
+    width: 941px;
+    height: 55px;
+    border-radius: 20px;
+    border-width: 2px;
+}
+
+#tabla{
+    border: 1px solid #8F8F8F;
+    border-radius: 20px;
+    margin: 10px;
+    width: 941px;
+    height: 55px;
+    border-radius: 20px;
+    border-width: 2px;
+}
+
+#tabla:hover{
+    background-color: var(--celeste);
+    border-color: var(--celeste);
+}
+
+.col-sm-2, .col-sm-3{
+    margin-top: 10px;
+}
+
+
