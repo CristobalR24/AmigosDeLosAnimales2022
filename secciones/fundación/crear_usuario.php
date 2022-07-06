@@ -56,7 +56,7 @@
                 </div>
     
               <div class="menu">   
-                <a class="direccion" href="crear_usuario.php">Crear usuario</a>
+                <a class="direccion direccion-seleccionado" href="crear_usuario.php">Crear usuario</a>
 
                 <a class="direccion" href="lista_usuario.php">Lista de usuarios</a>
               </div>

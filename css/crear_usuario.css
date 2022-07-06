@@ -64,7 +64,7 @@
 }
 
 .menu .direccion{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:  Helvetica, Arial, sans-serif;
     font-size: 20px;
     text-decoration: none;
     color: black; 
@@ -75,6 +75,14 @@
     border-bottom: solid;
     border-bottom-color: var(--celeste_oscuro);
 }
+
+.direccion-seleccionado{
+    color: var(--celeste_oscuro)!important;
+    border-bottom: solid;
+    border-bottom-color: var(--celeste_oscuro);}
+
+    .direccion-seleccionado:hover{
+        color: var(--celeste_oscuro);}
 
 
 /*-------------------------- Lista ------------------------------------*/
@@ -89,6 +97,9 @@
     background-color: #1177BF;
     color:#ffffff;}
 
+.btn-azul:hover{background-color: #0167F8;
+    color:#ffffff;}
+
 .dedo{cursor: pointer;}
 
 .btn-blanco{width: 90%!important;
@@ -96,14 +107,53 @@
         background-color: #ffffff;
         color: #1177BF;}
 
-        #tabla2{
-            border: 0.0625rem solid #8F8F8F;
-            border-radius: 1.25rem;
-            margin-inline: 0.625rem;
-            width: 58.8125rem;
-            
-            border-radius: 1.25rem;
-            border-width: 0.0625rem;
-            color: #8F8F8F;
-        }
-        
+#tabla2{
+    border: 0.0625rem solid #8F8F8F;
+    border-radius: 1.25rem;
+    margin-inline: 0.625rem;
+    width: 58.8125rem;
+    
+    border-radius: 1.25rem;
+    border-width: 0.0625rem;
+    color: #8F8F8F;}
+
+    /* Estilos modal */
+.btn-close{box-shadow: none!important;
+background-image: url(../img/recursos/menu-icon-close2.png);}
+
+.modal-dialog{width: fit-content!important;}
+
+.modal-content{border-radius: 20px;
+                border: 1px #000000 solid;    
+                width: fit-content!important;}
+
+.modal-title{font-family: Helvetica, Arial, sans-serif;
+            font-weight: bolder;}
+
+.campo{border: 2px #DAD7D7 solid;
+        outline-style: none;
+        padding-left: 0.5rem;
+        font-size: 1.12rem;
+        font-family:  Helvetica, Arial, sans-serif;
+        width: 20rem!important;}
+
+.campo-gris{background-color: #E3E3E3;
+            color: #8f8f8f;
+            font-weight:600;
+            font-size: 1.12rem;
+            cursor: default;}
+
+.modal-label{font-size: 1.12rem;
+            font-weight: bold;
+            font-family:  Helvetica, Arial, sans-serif;}
+
+.btn-guardar-edicion{background-color: #1177BF;
+                    border-style: none;
+                    font-family:  Helvetica, Arial,sans-serif;
+                    font-size: 1.12rem;
+                    font-weight: 600;
+                    color: #ffffff;
+                    border-radius: 10px;}
+
+.btn-guardar-edicion:hover{background-color: #0167F8;
+    color: #ffffff;}

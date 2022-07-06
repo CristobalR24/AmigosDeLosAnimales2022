@@ -56,7 +56,7 @@
             <!--- Aqui es donde va su contenido -->
             <form name="formulario_animales"><div class="menu">   
                             <a class="direccion" href="crear_usuario.php">Crear usuario</a>
-                            <a class="direccion" href="lista_usuario.php">Lista de usuarios</a>
+                            <a class="direccion direccion-seleccionado" href="lista_usuario.php">Lista de usuarios</a>
                         </div>
                 <div class="container">
                     <div class="input-wrapper"> 
@@ -90,18 +90,68 @@
                                 Abh_@89Gs-12
                             </div>
                             <div class="col-sm-2 my-auto d-flex justify-content-center">
-                                <button class="btn btn-azul">Editar</button>
+                                <button type="button" class="btn btn-azul" id="btn_editar">Editar</button>
                             </div>
                             <div class="col-sm-2 my-auto d-flex justify-content-center ">
                                 <button class="btn btn-blanco me-2">Eliminar</button>
                             </div>
                         </div>
                     </div>
-                </div>
-                
+                </div> 
             </form>
         </main>
     </div>
+
+    <div class="modal" id="editar_perfil" tabindex="1">
+        <div class="modal-dialog modal-dialog-centered m-auto">
+            <div class="modal-content">
+                <div class="modal-header text-center" style="border: none;">
+                    <h2 class="modal-title w-100">EDITAR</h2>
+                    <button type="button" id="cerrar" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body pt-0">
+                    <form class="d-flex justify-content-center align-items-center flex-column">
+                        <div class="text-start mb-3" >
+                            <label for="nombre" class="modal-label">Nombre</label> <br>
+                            <input class="m-0 campo campo-gris" id="nombre" type="text" value="Karla Quiel" readonly>
+                        </div>
+                        <div class="text-start mb-3" style="width: fit-content;">
+                            <label for="cedula" class="modal-label">Cédula</label> <br>
+                            <input class="m-0 campo campo-gris" id="cedula" type="text" value="8-966-1318" readonly>
+                        </div>
+                        <div class="text-start mb-3" style="width: fit-content;">
+                            <label for="password" class="modal-label">Nueva Contraseña</label> <br>
+                            <input class="m-0 campo" id="password" type="password" maxlength="16" oninput="pass_check()"> 
+                        </div>
+                        <div class="text-start" style="width: fit-content;">
+                            <label for="re_password" class="modal-label">Repetir Contraseña</label> <br>
+                            <input class="m-0 campo" id="re_password" type="password" maxlength="16" oninput="pass_check()">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer pb-3" style="border: none;">
+                    <button type="button" class="p-2 px-3 btn-guardar-edicion m-auto shadow">Editar Usuario</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 </body>
 </html>
 <script src="../../js/base_admin.js"></script>
+<script>
+    let btn_editar=document.getElementById("btn_editar");
+    let contenido=document.getElementById("editar_perfil");
+    let cerrar=document.getElementById("cerrar");
+    let cerrar2=document.getElementById("cerrar2");
+
+    btn_editar.onclick = function(){contenido.style.display="block";}
+
+    cerrar.onclick=cerrarModal;
+    cerrar2.onclick=cerrarModal;
+
+    function cerrarModal(){
+        contenido.style.display="none";}
+
+</script>
