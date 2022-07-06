@@ -77,7 +77,7 @@
                         </svg>
                     </div>
                     
-                    <button class="btn-opcion"> <img id="img-dog"> Perro de la vida</button>  
+                    <button class="btn-opcion"> <img id="img-dog"><img id="img-dog-hover">s Perro de la vida</button>  
                     <button class="btn-opcion"> <img src="../../img/recursos/gato_gris.png"  id="img-cat"> Gato</button>
                     <button class="btn-opcion"> <img src="../../img/recursos/adoptar_gris.png" id="img-adopcion"> Adopción</button>
                     <button class="btn-opcion"> <img src="../../img/recursos/temporal_gris.png" id="img-temporal"> temporal</button>             

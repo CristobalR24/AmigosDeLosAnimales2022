@@ -47,8 +47,10 @@ a:hover{
 }
 
 #img-dog{
-    background-image: url(../img/recursos/perro_gris.png)!important;
+    background: url(../img/recursos/perro_gris.png)!important;
     width: 1.6875rem; height: 1.5rem;}
+
+#img-dog-hover{background: url(../img/recursos/perro_azul.png)!important;}
 
     
 
