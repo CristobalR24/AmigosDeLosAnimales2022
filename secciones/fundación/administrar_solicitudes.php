@@ -6,32 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../css/bootstrap.min.css">
     <link rel="stylesheet" href="../../css/base.css">
-    <link rel="stylesheet" href="../../css/administrar_solicitudes.css">
+    <link rel="stylesheet" href="../../css/administrar_sm.css">
     <link rel="icon" href="../../img/recursos/logo.ico">
-    <title>Document</title>
+    <title>Solicitudes</title>
 </head>
 <body>
 
     <div class="row h-100 flex-column-reverse">
-    <nav class="col-12 col-md-3-2 sidebar shadow sidebar-hidden pe-0" id="sidebar">
+        <nav class="col-12 col-md-3-2 sidebar shadow sidebar-hidden pe-0" id="sidebar">
             <div class="side-encabezado text-center">
                 <img class="img-fluid d-none d-md-inline"src="../../img/recursos/logo.png">
                 <h4 class="pb-2 mt-md-0">ADMINISTRADOR</h4>
             </div>
             <ul class="mt-4">
-                <a href="#">
-                    <li class="my-2">   
+                <a href="administrar_solicitudes.php">
+                    <li class="my-2 seleccionado">   
                         <svg class="icono" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M170.666667 554.666667h256c23.466667 0 42.666667-19.2 42.666666-42.666667V170.666667c0-23.466667-19.2-42.666667-42.666666-42.666667H170.666667c-23.466667 0-42.666667 19.2-42.666667 42.666667v341.333333c0 23.466667 19.2 42.666667 42.666667 42.666667z m0 341.333333h256c23.466667 0 42.666667-19.2 42.666666-42.666667v-170.666666c0-23.466667-19.2-42.666667-42.666666-42.666667H170.666667c-23.466667 0-42.666667 19.2-42.666667 42.666667v170.666666c0 23.466667 19.2 42.666667 42.666667 42.666667z m426.666666 0h256c23.466667 0 42.666667-19.2 42.666667-42.666667v-341.333333c0-23.466667-19.2-42.666667-42.666667-42.666667h-256c-23.466667 0-42.666667 19.2-42.666666 42.666667v341.333333c0 23.466667 19.2 42.666667 42.666666 42.666667zM554.666667 170.666667v170.666666c0 23.466667 19.2 42.666667 42.666666 42.666667h256c23.466667 0 42.666667-19.2 42.666667-42.666667V170.666667c0-23.466667-19.2-42.666667-42.666667-42.666667h-256c-23.466667 0-42.666667 19.2-42.666666 42.666667z"/></svg>
                         <span class="mt-1">Solicitudes</span> 
                     </li>
                 </a>
-                <a href="lista_mascota.php">
+                <a href="administrar_mascotas.php">
                     <li class="my-2">
                         <svg class="icono" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M356.266667 128C406.613333 120.746667 459.946667 175.786667 475.306667 251.733333 490.666667 327.253333 462.933333 394.666667 412.586667 402.346667 362.666667 410.026667 308.906667 354.986667 293.12 279.04 277.333333 203.52 305.92 136.106667 356.266667 128M661.333333 128C712.106667 136.106667 740.266667 203.52 725.333333 279.04 709.12 354.986667 655.786667 410.026667 605.44 402.346667 554.666667 394.666667 526.933333 327.253333 542.72 251.733333 558.08 175.786667 611.413333 120.746667 661.333333 128M128 324.266667C176.64 303.36 242.773333 341.333333 277.333333 407.466667 309.76 474.88 298.666667 545.706667 250.453333 566.613333 202.24 587.52 136.533333 549.973333 102.826667 482.986667 69.12 416 81.066667 344.746667 128 324.266667M896 324.266667C942.933333 344.746667 954.88 416 921.173333 482.986667 887.466667 549.973333 821.76 587.52 773.546667 566.613333 725.333333 545.706667 714.24 474.88 746.666667 407.466667 781.226667 341.333333 847.36 303.36 896 324.266667M824.746667 784.213333C826.453333 824.32 795.733333 868.693333 759.04 885.333333 682.666667 920.32 592.213333 847.786667 507.306667 847.786667 422.4 847.786667 331.093333 923.306667 256 885.333333 213.333333 864.426667 183.893333 808.96 189.44 762.88 197.12 699.306667 273.493333 665.173333 318.72 618.666667 378.88 558.506667 421.546667 445.44 507.306667 445.44 592.64 445.44 637.866667 556.8 695.466667 618.666667 742.826667 670.72 821.76 714.666667 824.746667 784.213333Z"/></svg>   
                         <span class="mt-2">Mascotas</span>
                     </li>
                 </a>
-                <a href="#">
+                <a href="crear_usuario.php">
                     <li class="my-2">
                         <svg class="icono" viewBox="0 0 1097 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M338.857143 512q-92.571429 2.857143-151.428572 73.142857H110.857143q-46.857143 0-78.857143-23.142857T0 494.285714q0-201.714286 70.857143-201.714285 3.428571 0 24.857143 12t55.714285 24.285714T219.428571 341.142857q38.285714 0 76-13.142857-2.857143 21.142857-2.857142 37.714286 0 79.428571 46.285714 146.285714z m612 364q0 68.571429-41.714286 108.285714t-110.857143 39.714286H298.857143q-69.142857 0-110.857143-39.714286T146.285714 876q0-30.285714 2-59.142857t8-62.285714T171.428571 692.571429t24.571429-55.714286 35.428571-46.285714 48.857143-30.571429T344 548.571429q5.714286 0 24.571429 12.285714t41.714285 27.428571 61.142857 27.428572 77.142858 12.285714 77.142857-12.285714 61.142857-27.428572 41.714286-27.428571 24.571428-12.285714q34.857143 0 63.714286 11.428571t48.857143 30.571429 35.428571 46.285714 24.571429 55.714286 15.142857 62 8 62.285714 2 59.142857zM365.714286 146.285714q0 60.571429-42.857143 103.428572t-103.428572 42.857143-103.428571-42.857143-42.857143-103.428572 42.857143-103.428571T219.428571 0t103.428572 42.857143 42.857143 103.428571z m402.285714 219.428572q0 90.857143-64.285714 155.142857T548.571429 585.142857 393.428571 520.857143 329.142857 365.714286t64.285714-155.142857T548.571429 146.285714t155.142857 64.285715T768 365.714286z m329.142857 128.571428q0 44.571429-32 67.714286t-78.857143 23.142857h-76.571428q-58.857143-70.285714-151.428572-73.142857 46.285714-66.857143 46.285715-146.285714 0-16.571429-2.857143-37.714286 37.714286 13.142857 76 13.142857 33.714286 0 68-12.285714t55.714285-24.285714 24.857143-12q70.857143 0 70.857143 201.714285z m-73.142857-348q0 60.571429-42.857143 103.428572t-103.428571 42.857143-103.428572-42.857143-42.857143-103.428572 42.857143-103.428571 103.428572-42.857143 103.428571 42.857143 42.857143 103.428571z"/></svg>
                         <span class="mt-1">Usuarios</span> 
@@ -45,10 +45,10 @@
                 </a>
             </ul>
         </nav>
-        <main class="col-md-9 h-100 p-0 contenido"> 
+        <main class="col-12 col-md-9-2 h-100 p-0 contenido"> 
                 <div class="contenido-admin-encabezado d-flex align-items-center shadow-sm justify-content-center justify-content-md-start">
                     <img class="adm-menu-sm d-md-none position-absolute start-0" onclick="abrirMenu()" id="menu" src="../../img/recursos/menu-icon.png" width="25%">
-                    <svg class="icono" viewBox="0 200 900 900" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M170.666667 554.666667h256c23.466667 0 42.666667-19.2 42.666666-42.666667V170.666667c0-23.466667-19.2-42.666667-42.666666-42.666667H170.666667c-23.466667 0-42.666667 19.2-42.666667 42.666667v341.333333c0 23.466667 19.2 42.666667 42.666667 42.666667z m0 341.333333h256c23.466667 0 42.666667-19.2 42.666666-42.666667v-170.666666c0-23.466667-19.2-42.666667-42.666666-42.666667H170.666667c-23.466667 0-42.666667 19.2-42.666667 42.666667v170.666666c0 23.466667 19.2 42.666667 42.666667 42.666667z m426.666666 0h256c23.466667 0 42.666667-19.2 42.666667-42.666667v-341.333333c0-23.466667-19.2-42.666667-42.666667-42.666667h-256c-23.466667 0-42.666667 19.2-42.666666 42.666667v341.333333c0 23.466667 19.2 42.666667 42.666666 42.666667zM554.666667 170.666667v170.666666c0 23.466667 19.2 42.666667 42.666666 42.666667h256c23.466667 0 42.666667-19.2 42.666667-42.666667V170.666667c0-23.466667-19.2-42.666667-42.666667-42.666667h-256c-23.466667 0-42.666667 19.2-42.666666 42.666667z"/></svg>
+                    <svg class="icono" viewBox="-200 200 1300 900" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M170.666667 554.666667h256c23.466667 0 42.666667-19.2 42.666666-42.666667V170.666667c0-23.466667-19.2-42.666667-42.666666-42.666667H170.666667c-23.466667 0-42.666667 19.2-42.666667 42.666667v341.333333c0 23.466667 19.2 42.666667 42.666667 42.666667z m0 341.333333h256c23.466667 0 42.666667-19.2 42.666666-42.666667v-170.666666c0-23.466667-19.2-42.666667-42.666666-42.666667H170.666667c-23.466667 0-42.666667 19.2-42.666667 42.666667v170.666666c0 23.466667 19.2 42.666667 42.666667 42.666667z m426.666666 0h256c23.466667 0 42.666667-19.2 42.666667-42.666667v-341.333333c0-23.466667-19.2-42.666667-42.666667-42.666667h-256c-23.466667 0-42.666667 19.2-42.666666 42.666667v341.333333c0 23.466667 19.2 42.666667 42.666666 42.666667zM554.666667 170.666667v170.666666c0 23.466667 19.2 42.666667 42.666666 42.666667h256c23.466667 0 42.666667-19.2 42.666667-42.666667V170.666667c0-23.466667-19.2-42.666667-42.666667-42.666667h-256c-23.466667 0-42.666667 19.2-42.666666 42.666667z"/></svg>
                     <h1>Solicitudes</h1>
                 </div><br>
             <!--- Aqui es donde va su contenido -->
@@ -56,13 +56,13 @@
                 <header class="header">
                     <div class="row">
                         <div class="col-sm-2">
-                            <a href="#">En espera</a>
+                            <a href="#" class="link" id="espera">En espera</a>
                         </div>
                         <div class="col-sm-2">
-                            <a href="#">Aprobadas</a>
+                            <a href="#" class="link" id="aprobado">Aprobadas</a>
                         </div>
                         <div class="col-sm-2">
-                            <a href="#">Rechazadas</a>
+                            <a href="#" class="link" id="rechazado">Rechazadas</a>
                         </div>
                     </div>
                 </header>
@@ -70,43 +70,68 @@
             
             <form name="formulario_animales">
                 <div class="container">
-                    <input id="busqueda" type="search">
-                    <button class="btn btn-outline-primary">Perro</button>  
-                    <button class="btn btn-outline-primary">Gato</button>
-                    <button class="btn btn-outline-primary">Adopción</button>
-                    <button class="btn btn-outline-primary">Hogar temporal</button>
-                    <br><br>
+                    <div class="input-wrapper">
+                        <input id="busqueda" type="search" placeholder="Nombre">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="input-icon" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
                     
-                    <table class="table table-hover">
-                        <thead>
-                            <tr>
-                                <th>Mascota solicitada</th>
-                                <th>Tipo de solicitud</th>
-                                <th>Solicitado por</th>
-                                <th>Fecha</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Negrito</td>
-                                <td>Adopción</td>
-                                <td>Nombre Apellido</td>
-                                <td>11-10-2022 <button class="btn btn-primary">Ver información</button></td>
-                            </tr>
-                            <tr>
-                                <td>Negrito</td>
-                                <td>Adopción</td>
-                                <td>Nombre Apellido</td>
-                                <td>11-10-2022 <button class="btn btn-primary">Ver información</button></td>
-                            </tr>
-                            <tr>
-                                <td>Negrito</td>
-                                <td>Adopción</td>
-                                <td>Nombre Apellido</td>
-                                <td>11-10-2022 <button class="btn btn-primary">Ver información</button></td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <button class="btn-opcion"> <img id="img-dog"> Perro de la vida</button>  
+                    <button class="btn-opcion"> <img src="../../img/recursos/gato_gris.png"  id="img-cat"> Gato</button>
+                    <button class="btn-opcion"> <img src="../../img/recursos/adoptar_gris.png" id="img-adopcion"> Adopción</button>
+                    <button class="btn-opcion"> <img src="../../img/recursos/temporal_gris.png" id="img-temporal"> temporal</button>             
+                    <br><br>
+                    <div>
+                        <div class="row" id="encabezado">
+                            <div class="col-sm-3">
+                                Mascota Solicitada
+                            </div>
+                            <div class="col-sm-2">
+                                Tipo de Solicitud
+                            </div>
+                            <div class="col-sm-2">
+                                Solicitado por:
+                            </div>
+                            <div class="col-sm-2">
+                                Fecha
+                            </div>
+                        </div>
+                        <?php
+                                include('..//..//BD//conexion.php');
+                                $sql="call Obtener_Solicitud(?)";
+                                $valor=3;
+                                $consulta=$conn->prepare($sql);
+                                $consulta->bindParam(1,$valor,PDO::PARAM_STR);
+                                $consulta->execute();
+                                
+                                while($row=$consulta->fetch())
+                                {
+                                $mascota=$row["Nombre"];
+                                $Tipo=$row["Tipo_Formulario"];
+                                $nombre_adop=$row["Nombre_Adop"];
+                                $fecha=$row["Fecha"];
+                                ?>
+                        <div class="row" id="tabla">
+                            <div class="col-sm-3 my-auto">
+                               <strong><?php echo $mascota;?></strong> 
+                            </div>
+                            <div class="col-sm-2 my-auto">
+                                <?php echo $Tipo; ?>
+                            </div>
+                            <div class="col-sm-2 my-auto">
+                                <?php echo $nombre_adop; ?>
+                            </div>
+                            <div class="col-sm-2 my-auto">
+                                <?php echo $fecha; ?> 
+                            </div>
+                            <div class="col-sm-2 my-auto">
+                                <button class="btn-ver-info">Ver información</button>
+                            </div>
+                        </div>
+                        <?php } ?>
+
+                    </div>
                 </div>
                 
             </form>
