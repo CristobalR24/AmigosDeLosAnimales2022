@@ -46,40 +46,69 @@ a:hover{
     border-color: var(--azul_borde);
 }
 
-#img-dog{
-    background: url(../img/recursos/perro_gris.png)!important;
-    width: 1.6875rem; height: 1.5rem;}
+/* boton perro */
 
-#img-dog-hover{background: url(../img/recursos/perro_azul.png)!important;}
+#img-dog{width: 1.6875rem; height: 1.5rem;}
 
-    
+#img-dog-hover{width: 1.6875rem; height: 1.5rem;
+            display: none; /*por defecto no se muestra*/}
 
-#img-cat{
-    width: 1.6875rem; height: 1.5rem; 
+.btn-opcion:hover #img-dog-hover{
+    display: inline;
 }
-#img-adopcion{
-    width: 1.6875rem; height: 1.5rem; 
-}
-#img-temporal{
-    width: 1.6875rem; height: 1.5rem; 
+.btn-opcion:hover #img-dog{
+    display: none;
 }
 
-form .container .btn-opcion #img-dog:hover{
-  /*  background-image: url("C:/xampp1/htdocs/AmigosDeLosAnimales/img/recursos/perro_azul.png");
-*/ width: 1.6875rem; height: 1.5rem; 
+/*-----------------*/
+
+/* boton gato */
+
+#img-cat{ width: 1.6875rem; height: 1.5rem; }
+
+#img-cat-hover{width: 1.6875rem; height: 1.5rem;
+            display: none; /*por defecto no se muestra*/}
+
+.btn-opcion:hover #img-cat-hover{
+    display: inline;
+}
+.btn-opcion:hover #img-cat{
+    display: none;
 }
 
-form .container .btn-opcion #img-cat:hover{
-    background: url("../../img/recursos/gato_azul.png");
+/*-----------------*/
+
+
+/* boton adopcion */
+
+#img-adopcion, #img-adopcion-hover{width: 1.6875rem; height: 1.5rem; }
+
+#img-adopcion-hover{display: none; /*por defecto no se muestra*/}
+
+.btn-opcion:hover #img-adopcion-hover{
+    display: inline;
+}
+.btn-opcion:hover #img-adopcion{
+    display: none;
 }
 
-form .container .btn-opcion #img-adopcion:hover{
-    background: url("../../img/recursos/adoptar_azul.png");
+/*-----------------*/
+
+/* boton temporal */
+
+#img-temporal, #img-temporal-hover{width: 1.6875rem; height: 1.5rem; }
+
+#img-temporal-hover{display: none; /*por defecto no se muestra*/}
+
+.btn-opcion:hover #img-temporal-hover{
+    display: inline;
+}
+.btn-opcion:hover #img-temporal{
+    display: none;
 }
 
-form .container .btn-opcion #img-temporal:hover{
-    background: url("../../img/recursos/temporal_azul.png");
-}
+/*-----------------*/
+
 
 .btn-ver-info{
     color: white;

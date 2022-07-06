@@ -79,13 +79,19 @@
 
 /*-------------------------- Lista ------------------------------------*/
 
+.btn{border-radius: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 2rem;}
+
 .btn-azul{width: 100%;
     background-color: #1177BF;
     color:#ffffff;}
 
 .dedo{cursor: pointer;}
 
-.btn-blanco{width: 100%;
+.btn-blanco{width: 90%!important;
         border: 1px solid #1177BF;
         background-color: #ffffff;
         color: #1177BF;}

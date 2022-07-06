@@ -78,10 +78,10 @@
                         </svg>
                     </div>
                     
-                    <button class="btn-opcion"> <img src="../../img/recursos/perro_gris.png" id="img-dog"> Perro</button>  
-                    <button class="btn-opcion"> <img src="../../img/recursos/gato_gris.png"  id="img-cat"> Gato</button>
-                    <button class="btn-opcion"> <img src="../../img/recursos/adoptar_gris.png" id="img-adopcion"> Adopción</button>
-                    <button class="btn-opcion"> <img src="../../img/recursos/temporal_gris.png" id="img-temporal"> temporal</button>             
+                    <button class="btn-opcion"> <img id="img-dog" src="../../img/recursos/perro_gris.png"><img id="img-dog-hover" src="../../img/recursos/perro_azul.png"> Perro</button>  
+                    <button class="btn-opcion"> <img src="../../img/recursos/gato_gris.png"  id="img-cat"><img id="img-cat-hover" src="../../img/recursos/gato_azul.png"> Gato</button>
+                    <button class="btn-opcion"> <img src="../../img/recursos/adoptar_gris.png" id="img-adopcion"><img id="img-adopcion-hover" src="../../img/recursos/adoptar_azul.png"> Adopción</button>
+                    <button class="btn-opcion"> <img src="../../img/recursos/temporal_gris.png" id="img-temporal"><img id="img-temporal-hover" src="../../img/recursos/temporal_azul.png"> temporal</button>             
                     <br><br>
                     <div>
                         <div class="row" id="encabezado">
