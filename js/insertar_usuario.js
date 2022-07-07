@@ -58,12 +58,15 @@ function enviar()
        respuesta=this.responseText;
         if(respuesta==0)
         { //alert("ERORoooooo");
+        
             document.getElementById("respuesta").innerHTML="No pudimos crear este usuario, intenta de nuevo";
 
         }
         else if(respuesta==1)
         { //alert("NO EROR");
-            document.getElementById("respuesta").innerHTML="Usuario creado correctamente";
+            
+            document.getElementById("correcto").innerHTML="Usuario creado correctamente";
+            
             document.getElementById("nombre").value="";
             document.getElementById("cedula").value="";
             document.getElementById("password").value="";
@@ -72,7 +75,7 @@ function enviar()
         }
         else if(respuesta==1062)
         {  // alert("EROR");
-            document.getElementById("respuesta").innerHTML="Esta contraseña o Cedula ya se encuentra en uso";
+            document.getElementById("respuesta").innerHTML="Esta contraseña o cédula ya se encuentra en uso";
         }
 
     

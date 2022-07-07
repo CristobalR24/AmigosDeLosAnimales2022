@@ -49,7 +49,7 @@
             </ul>
         </nav>
 
-        <main class="col-md-9 h-100 p-0 contenido"> 
+        <main class="col-12 col-md-9-2 h-100 p-0 contenido"> 
                 <div class="contenido-admin-encabezado d-flex align-items-center shadow-sm justify-content-center justify-content-md-start">
                     <img class="adm-menu-sm d-md-none position-absolute start-0" onclick="abrirMenu()" id="menu" src="../../img/recursos/menu-icon.png" width="25%">
                     <svg class="icono" style="height:3.5rem;" viewBox="-200 -100 900 900" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="m 246,39.4283 c -13.922,1.9935 -27.238,6.2045 -39,14.091 C 196.861,60.318 188.457,68.8781 181.671,79 139.856,141.368 194.653,225.237 268,215.711 c 12.325,-1.601 24.426,-6.044 35,-12.522 66.076,-40.482 48.541,-146.5539 -28,-162.1852 -9.423,-1.9244 -19.414,-2.9482 -29,-1.5755 M 91,122.428 c -9.3828,1.344 -17.8889,4.246 -26,9.187 -7.3814,4.496 -13.7453,10.4 -18.841,17.385 -34.6298,47.471 7.1018,112.106 63.841,104.711 8.605,-1.122 16.522,-4.255 24,-8.587 61.139,-35.413 26.33,-132.628 -43,-122.696 m 312,0 c -9.287,1.331 -17.967,4.297 -26,9.187 -60.998,37.135 -23.733,131.134 45,122.096 8.831,-1.162 17.458,-4.213 25,-8.94 58.995,-36.975 25.66,-132.322 -44,-122.343 m -201,113 c -8.275,1.186 -16.429,3.294 -24,6.892 -39.653,18.848 -41,57.8 -41,95.68 v 61 48 c 0,6.812 -1.31,15.268 3.419,20.892 4.513,5.366 11.202,5.108 17.581,5.108 h 38 112 c 17.548,0 37.739,2.787 55,-0.329 17.708,-3.198 12,-31.705 12,-44.671 v -91 c 0,-18.367 1.841,-37.484 -4.814,-55 -2.487,-6.546 -5.845,-12.426 -10.085,-18 -26.082,-34.288 -66.94,-29 -105.101,-29 -17.249,0 -35.924,-2.018 -53,0.428 M 110,473 c -6.444,-20.33 -3,-44.878 -3,-66 0,-33.859 -3.039,-69.307 0.17,-103 1.01,-10.608 4.295,-20.569 5.83,-31 -18.4566,0 -37.8744,-1.631 -56,2.425 -7.6718,1.717 -15.3742,4.666 -22,8.923 C -3.84012,309.302 0,350.523 0,391 c 0,25.324 -4.88651,54.616 17,72.671 11.5519,9.53 25.8715,9.329 40,9.329 h 53 M 399,273 c 1.535,10.431 4.82,20.392 5.83,31 3.209,33.693 0.17,69.141 0.17,103 0,21.122 3.444,45.67 -3,66 h 53 c 14.128,0 28.448,0.201 40,-9.329 21.887,-18.055 17,-47.347 17,-72.671 0,-40.477 3.84,-81.698 -35,-106.652 -6.626,-4.257 -14.328,-7.206 -22,-8.923 C 436.874,271.369 417.457,273 399,273 Z"/></svg>                    <h1>Usuarios</h1>
@@ -69,16 +69,17 @@
                 <label for="password">Contraseña</label> <br>
                 <input id="password" type="password" maxlength="16" oninput="pass_check()"> <br>
                 <label for="re_password">Repetir Contraseña</label> <br>
-                <input id="re_password" type="password" maxlength="16" oninput="pass_check()"> <br><br>
-                <a id="respuesta"></a><br><br>
-                <button id="btn_crear" onclick="enviar()">Crear Usuario</button>
+                <input id="re_password" type="password" maxlength="16" oninput="pass_check()"> <br>
+                <div class="mb-2" class="respuesta" id="respuesta"></div>
+                <div class="mb-2" class="respuesta" id="correcto"></div>
+                <div class="centrar-boton">
+                    <button id="btn_crear" onclick="enviar()">Crear Usuario</button>
+                </div>
 
               </form>
 
-        </main
+            </main>
 
-<main>
->
     </div>
 </body>
 </html>

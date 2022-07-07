@@ -53,16 +53,19 @@
                 </div><br>
             <!--- Aqui es donde va su contenido -->
             <div class="container">
-                <header class="header">
-                    <div class="row">
-                        <div class="col-sm-2">
+                <header class="encabezado-filtro">
+                    <div class="row g-0">
+                        <div class="col-sm-2 filtro pb-2 ps-3">
                             <a href="#" class="link" id="espera">En espera</a>
                         </div>
-                        <div class="col-sm-2">
+                        <div class="col-sm-2 filtro pb-2 ps-3">
                             <a href="#" class="link" id="aprobado">Aprobadas</a>
                         </div>
-                        <div class="col-sm-2">
+                        <div class="col-sm-2 filtro pb-2 ps-3">
                             <a href="#" class="link" id="rechazado">Rechazadas</a>
+                        </div>
+                        <div class="col-sm-6 filtro-placeholder pb-2">
+                            <a href="#"></a>
                         </div>
                     </div>
                 </header>

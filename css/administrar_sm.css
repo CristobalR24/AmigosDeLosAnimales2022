@@ -175,13 +175,23 @@ strong:hover{
     margin-top: 0.8125rem;
 }
 
-header{
-    border-bottom: solid;
-    border-block-color: #D9D9D9;
+.encabezado-filtro{
     margin-bottom: 1.5rem;
+    border-collapse: collapse;
     margin-left: 0.78125rem;}
 
-header div div:hover{
+.filtro{
+    color: var(--azul_borde);
+    border-bottom: solid;
+    border-bottom-color: #D9D9D9;}
+
+.filtro-placeholder{
+    color: var(--azul_borde);
+    border-bottom: solid;
+    border-collapse: collapse;
+    border-bottom-color: #D9D9D9;}
+
+.filtro:hover{
     color: var(--azul_borde);
     border-bottom: solid;
     border-bottom-color: var(--azul_borde);}

@@ -16,7 +16,7 @@ function sesion()
       }
       else
       {
-        document.getElementById("falla").value="Verifica que los datos sean correctos";
+        document.getElementById("falla").value="Verifique que los datos sean correctos";
       }
     }
   xmlhttp.open("GET", "../../BD/inicio_sesion.php?q="+cedula+"&p="+pass,true);

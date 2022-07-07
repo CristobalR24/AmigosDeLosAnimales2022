@@ -21,21 +21,21 @@
                 <!-- <form onsubmit="prueba()"> -->
                     <h1 class="titulo-login">INICIO DE SESIÓN</h1>
                     <div class="grupo-icono mt-5">
-                        <input required class="entrada mt-1" id="cedula" type="text" maxlength="15" placeholder="Cédula" />
+                        <input required class="entrada mt-1" id="cedula" type="text" maxlength="15" placeholder="Cédula" required/>
                         <i class="fa-solid fa-user"></i>
                     </div>
                     <br>
                     
                     <div class="grupo-icono">
-                        <input required id="contrasena" class="entrada mt-1" type="password" maxlength="16" placeholder="Contraseña"/>
+                        <input required id="contrasena" class="entrada mt-1" type="password" maxlength="16" placeholder="Contraseña" required/>
                         <i class="fa-solid fa-key"></i>
                     </div>
                     <br>
                     <button class="btn-entrar shadow" onclick="sesion()">ENTRAR</button>
                     <br>
-                    <a id="falla"></a>
+                    <input class="mensaje-error mb-2 mt-2 w-100 text-center" readonly id="falla"></input>
                     
-                    <div class="mb-4 mb-md-0" id="linea">
+                    <div class="mb-4 mb-md-0 mt-0" id="linea">
                         <a href="../../index.html" id="volver">Volver a la página principal</a>
                     </div>
                 <!-- </form> -->
