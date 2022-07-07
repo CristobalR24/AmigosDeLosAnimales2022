@@ -140,6 +140,9 @@ footer{background-color: rgb(217, 217, 217, .42)}
 
     .lg-off{display: none;}
 
+    .col-md-3-2 { width: 23.95%; }
+    .col-md-9-2 { width: 76.05%; }
+
 }
 
 
@@ -206,7 +209,7 @@ footer{background-color: rgb(217, 217, 217, .42)}
                                 vertical-align: middle;
                                 overflow: visible;
                                 margin-left: 2rem;
-                                height: 3.5rem;}
+                                height: 2.5rem;}
 
 .contenido-admin-encabezado h1{margin-left: 2rem;
                             font-family:'helvetica';
@@ -218,8 +221,5 @@ footer{background-color: rgb(217, 217, 217, .42)}
         margin-right: 2rem;}
 
 .adm-menu-sm{cursor: pointer;} 
-
-.col-md-3-2 { width: 20.8rem; }
-.col-md-9-2 { width: 75.83%; }
 
 html,body{height: 100%;}

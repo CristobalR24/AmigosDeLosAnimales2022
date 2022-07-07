@@ -1,0 +1,274 @@
+:root{--celeste:#99D7F1;
+    --celeste_oscuro:#1299B7;
+    --azul:#0167F8;
+    --azul_oscuro:#2225EA;
+    --azul_borde:#1177BF;}
+
+div button{
+    margin-left: 1rem;
+}
+
+@font-face {
+    font-family: "helvetica-bold";
+    src: url("../fonts/HelveticaNeue-Bd.otf");
+}
+
+@font-face{
+    font-family: "JosefinSans-Regular";
+    src: url("../fonts/JosefinSans-Regular.ttf")
+}
+
+a{
+    font-family: 'helvetica-bold';
+    color: #000000;
+    text-decoration: none;
+}
+
+a:hover{
+    color: var(--azul_borde);
+    text-decoration: none;
+}
+
+.btn-opcion{
+    color: #8F8F8F;
+    border-color: #D9D9D9;
+    border-radius: 0.9375rem;
+    height: 2.5rem;
+    top: 15.3125rem;
+    bottom: 60.75rem;
+    border-style: ridge;
+
+}
+
+.btn-opcion:hover{
+    background-color: white;
+    color: var(--azul_borde);
+    border-color: var(--azul_borde);
+}
+
+/* boton perro */
+
+#img-dog{width: 1.6875rem; height: 1.5rem;}
+
+#img-dog-hover{width: 1.6875rem; height: 1.5rem;
+            display: none; /*por defecto no se muestra*/}
+
+.btn-opcion:hover #img-dog-hover{
+    display: inline;
+}
+.btn-opcion:hover #img-dog{
+    display: none;
+}
+
+/*-----------------*/
+
+/* boton gato */
+
+#img-cat{ width: 1.6875rem; height: 1.5rem; }
+
+#img-cat-hover{width: 1.6875rem; height: 1.5rem;
+            display: none; /*por defecto no se muestra*/}
+
+.btn-opcion:hover #img-cat-hover{
+    display: inline;
+}
+.btn-opcion:hover #img-cat{
+    display: none;
+}
+
+/*-----------------*/
+
+
+/* boton adopcion */
+
+#img-adopcion, #img-adopcion-hover{width: 1.6875rem; height: 1.5rem; }
+
+#img-adopcion-hover{display: none; /*por defecto no se muestra*/}
+
+.btn-opcion:hover #img-adopcion-hover{
+    display: inline;
+}
+.btn-opcion:hover #img-adopcion{
+    display: none;
+}
+
+/*-----------------*/
+
+/* boton temporal */
+
+#img-temporal, #img-temporal-hover{width: 1.6875rem; height: 1.5rem; }
+
+#img-temporal-hover{display: none; /*por defecto no se muestra*/}
+
+.btn-opcion:hover #img-temporal-hover{
+    display: inline;
+}
+.btn-opcion:hover #img-temporal{
+    display: none;
+}
+
+/*-----------------*/
+
+
+.btn-ver-info{
+    color: white;
+    background-color: var(--azul_borde);
+    width: 9.4375rem;
+    height: 2rem;
+    top: 0.75rem;
+    left: 48.125rem;
+    border-radius: 0.625rem;
+    border-color: var(--azul_borde);
+    border-style: none;
+
+    box-shadow: 2px 2px 5px #444444;
+}
+
+.btn-ver-info:hover{
+    color: white;
+    background-color: #0167F8;
+    border-style: none;
+}
+
+#encabezado{
+    border: 0.0625rem solid var(--azul_borde);
+    color: var(--azul_borde);
+    font-family: 'helvetica-bold';
+    font-size: 1rem;
+    border-radius: 1.25rem;
+    margin: 0.625rem;
+    width: 58.8125rem;
+    height: 3.4375rem;
+    border-radius: 1.25rem;
+    border-width: 0.0625rem;
+}
+
+#tabla{
+    border: 0.0625rem solid #8F8F8F;
+    border-radius: 1.25rem;
+    margin: 0.625rem;
+    width: 58.8125rem;
+    height: 3.4375rem!important;
+    border-radius: 1.25rem;
+    border-width: 0.0625rem;
+    color: #8F8F8F;
+}
+
+strong{
+    color: #000000;
+    font-family: 'helvetica-bold';
+}
+
+strong:hover{
+    color: var(--azul_borde);
+    font-family: 'helvetica-bold';
+}
+
+#tabla:hover{
+    color: var(--azul_borde);
+    border-color: var(--azul_borde);
+    font-weight: bold;
+    font-family: 'helvetica-bold';
+}
+
+.col-sm-2, .col-sm-3{
+    margin-top: 0.8125rem;
+}
+
+.encabezado-filtro{
+    margin-bottom: 1.5rem;
+    border-collapse: collapse;
+    margin-left: 0.78125rem;}
+
+.filtro{
+    color: var(--azul_borde);
+    border-bottom: solid;
+    border-bottom-color: #D9D9D9;}
+
+.filtro-placeholder{
+    color: var(--azul_borde);
+    border-bottom: solid;
+    border-collapse: collapse;
+    border-bottom-color: #D9D9D9;}
+
+.filtro:hover{
+    color: var(--azul_borde);
+    border-bottom: solid;
+    border-bottom-color: var(--azul_borde);}
+
+div input, div button{
+    margin-left: 0.78125rem;}
+
+#busqueda{
+    width: 14.875rem;
+    height: 2.5rem;
+    top: 15.3125rem;
+    left: 27.4375rem;
+    border: 1px solid black;
+    outline-style: none;
+    
+    border-radius: 0.9375rem;
+    text-decoration: none;
+}
+
+.input-wrapper{
+    display: inline;   
+}
+
+.input-icon{
+    color: #8F8F8F;
+    position: relative;
+    width: 2.0625rem;
+    height: 2.1875rem;
+    right: 2.8rem;
+    top: -0.2rem;
+}
+
+input::placeholder{
+    color: #8F8F8F;
+    padding-left: 1.5rem;
+}
+
+/*BOTON DE CREAR NUEVA MASCOTA*/
+.btn-crear-nueva-mascota{
+    color: white;
+    background-color: var(--azul_borde);
+    width: 9.4375rem;
+    height: 2rem;
+    top: 0.75rem;
+    left: 48.125rem;
+    border-radius: 0.625rem;
+    border-color: var(--azul_borde);
+    border-style: none;
+    margin-left: 33rem;
+
+    box-shadow: 2px 2px 5px #444444;
+}
+
+.btn-crear-nueva-mascota:hover{
+    color: white;
+    background-color: #0167F8;
+    border-style: none;
+}
+
+/*BOTÓN DE EDITAR*/
+.btn-editar{
+    color: white;
+    background-color: var(--azul_borde);
+    width: 5rem;
+    height: 2rem;
+    top: 0.75rem;
+    left: 48.125rem;
+    border-radius: 0.625rem;
+    border-color: var(--azul_borde);
+    border-style: none;
+    margin-left: 5rem;
+
+    box-shadow: 2px 2px 5px #444444;
+}
+
+.btn-editar:hover{
+    color: white;
+    background-color: #0167F8;
+    border-style: none;
+}

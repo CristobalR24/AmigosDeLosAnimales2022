@@ -9,35 +9,39 @@
     <link rel="stylesheet" href="../../css/login.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
     <title>Iniciar sesión</title>
+    <script type="text/javascript" src="../../js/inicio_sesion.js"></script>
 </head>
 
 <body>    
+    <?php include ("..//..//BD//conexion.php");?>
     <div class="container bg-light contenedor-form " style="height:fit-content;">
-        <div class="row">
+        <div class="row" style="height:33rem">
             <div class="col-md-6 col-sm-12 text-center">
                 <img class="img-fluid w-25 img-logo" src="../../img/recursos/logo.png">
-                <form action="administrar_solicitudes.php">
+                <!-- <form onsubmit="prueba()"> -->
                     <h1 class="titulo-login">INICIO DE SESIÓN</h1>
                     <div class="grupo-icono mt-5">
-                        <input class="entrada mt-1" id="cedula" type="text" placeholder="Cédula" onchange="cambio_color" />
+                        <input required class="entrada mt-1" id="cedula" type="text" maxlength="15" placeholder="Cédula" required/>
                         <i class="fa-solid fa-user"></i>
                     </div>
                     <br>
                     
                     <div class="grupo-icono">
-                        <input class="entrada mt-1" type="password" placeholder="Contraseña"/>
+                        <input required id="contrasena" class="entrada mt-1" type="password" maxlength="16" placeholder="Contraseña" required/>
                         <i class="fa-solid fa-key"></i>
                     </div>
                     <br>
-                    <a><button class="btn-entrar shadow">ENTRAR</button></a>
+                    <button class="btn-entrar shadow" onclick="sesion()">ENTRAR</button>
                     <br>
-                    <div class="mb-4 mb-md-0" id="linea">
+                    <input class="mensaje-error mb-2 mt-2 w-100 text-center" readonly id="falla"></input>
+                    
+                    <div class="mb-4 mb-md-0 mt-0" id="linea">
                         <a href="../../index.html" id="volver">Volver a la página principal</a>
                     </div>
-                </form>
+                <!-- </form> -->
             </div>
             <div class="col-md-6 col-sm-0 bg-dark p-0 m-0">
-                <img class="img-fluid img-lado d-none d-md-block" src="../../img/recursos/negrito-01-13.png">
+                <img class="img-lado d-none d-md-inline-block" src="../../img/recursos/negrito-01-13.png">
             </div>
         </div>
     </div>
