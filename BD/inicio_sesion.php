@@ -25,7 +25,7 @@ $Ced=$row["Cedula"];
 if($resultado>0)
 {
    echo(1);//se consigue informacion en la base de datos
-       
+    setcookie("usuario",$Ced);
 }
 else
 {

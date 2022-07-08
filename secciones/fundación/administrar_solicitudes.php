@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../css/bootstrap.min.css">
     <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="../../css/dialog_style.css">
     <link rel="stylesheet" href="../../css/administrar_solicitudes.css">
     <link rel="icon" href="../../img/recursos/logo.ico">
     <script type="text/javascript" src="../../js/admin_solicitud.js"></script>
@@ -54,6 +55,16 @@
                     <h1>Solicitudes</h1>
                 </div><br>
             <!--- Aqui es donde va su contenido -->
+
+            <dialog id="dialog"> 
+                        <div id="contenido"></div>
+                            
+                    </dialog> 
+
+                    
+            <form name="formulario_animales">
+
+
             <div class="container">
                 <header class="header">
                     <div class="row">
@@ -70,19 +81,15 @@
                 </header>
             </div>
             
-            <form name="formulario_animales">
+
                 <div class="container">
                     <input id="busqueda" type="search" onkeyup="filtro()">
-                    <button class="btn btn-outline-primary" id="perro" onclick="test()">Perro</button>  
-                    <button class="btn btn-outline-primary" id="gato" onclick="test()">Gato</button>
-                    <button class="btn btn-outline-primary" id="adop" onclick="test()">Adopción</button>
-                    <button class="btn btn-outline-primary" id="hogar" onclick="test()">Hogar temporal</button>
+                    <button class="btn btn-outline-primary" id="perro" onclick="filtro_tipo_mascota('Perro')">Perro</button>  
+                    <button class="btn btn-outline-primary" id="gato" onclick="filtro_tipo_mascota('Gato')">Gato</button>
+                    <button class="btn btn-outline-primary" id="adop" onclick="filtro_tipo_form('Adop')">Adopción</button>
+                    <button class="btn btn-outline-primary" id="hogar" onclick="filtro_tipo_form('Hogar temporal')">Hogar temporal</button>
                     <br><br>
-                    <dialog id="dialog"> 
 
-                        <a id="pr"></a>
-
-                    </dialog>
                     <table class="table table-hover" id="tbl">
                         <thead>
                             <tr>
@@ -91,6 +98,7 @@
                                 <th>Tipo de solicitud</th>
                                 <th>Solicitado por</th>
                                 <th>Fecha</th>
+                                <th>Tipo</th>
                             </tr>
                         </thead>
                         <tbody>

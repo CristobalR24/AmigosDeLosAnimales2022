@@ -1,6 +1,7 @@
 window.onload = function() {
 
     const element = document.querySelector('form');
+    document.getElementById("dialog").style.display="none";
 element.addEventListener('submit', event => {
   event.preventDefault();
  
@@ -10,8 +11,6 @@ element.addEventListener('submit', event => {
    solicitud(3);
 
 };
-
-
 
 
 function solicitud(tipo)
@@ -35,37 +34,48 @@ function solicitud(tipo)
 }
 
 
-function testeo()
-{
-   
-   
-    let table = document.getElementById("tbl");
-    let id;          
-    let dialog = document.getElementById('dialog');    
-    for(let i = 1; i < table.rows.length; i++)
-    {
-        table.rows[i].onclick = function()
-        {
-             //rIndex = this.rowIndex;
-           id=this.cells[0].innerHTML;
-           document.getElementById("perro").style.backgroundColor='#1177BF';
-           document.getElementById("perro").style.color='white';
-         //  dialog.show();
-           console.log(id);
-        };
-    }
-    
-}
-
 function filtro(){
   let filtro = document.getElementById("busqueda").value.toUpperCase();
   let fila = document.querySelector("#tbl tbody").rows;
   
   for (let i = 0; i < fila.length; i++) {
-      //var firstCol = rows[i].cells[0].textContent.toUpperCase();
       let Col = fila[i].cells[1].textContent.toUpperCase();
       if (Col.indexOf(filtro) > -1) {
         fila[i].style.display = "";
+        
+      } else {
+        fila[i].style.display = "none";
+      }      
+  }
+}
+function filtro_tipo_form(formt) {
+  let filtro =formt.toUpperCase();
+  let fila = document.querySelector("#tbl tbody").rows;
+  
+  for (let i = 0; i < fila.length; i++) {
+      let Col = fila[i].cells[2].textContent.toUpperCase();
+      if (Col.indexOf(filtro) > -1) {
+        fila[i].style.display = "";
+       
+      } else {
+        fila[i].style.display = "none";
+      }      
+  }
+}
+
+function filtro_tipo_mascota(type_pet) {
+  let filtro =type_pet.toUpperCase();
+ 
+  let fila = document.querySelector("#tbl tbody").rows;
+  
+  for (let i = 0; i < fila.length; i++) {
+      let Col = fila[i].cells[5].textContent.toUpperCase();
+     
+      if (Col.indexOf(filtro) > -1) {
+        fila[i].style.display = "";
+        if(document.getElementById("busqueda").value.length>0)
+        this.filtro();
+        
       } else {
         fila[i].style.display = "none";
       }      
@@ -73,8 +83,77 @@ function filtro(){
 }
 
 
-function test()
-{
-  console.log("Just testing");
+function info(){
+
+
+    
+  let table = document.getElementById("tbl");
+  let id;          
+  let dialog = document.getElementById('dialog');    
+  for(let i = 1; i < table.rows.length; i++)
+  {
+      table.rows[i].onclick = function()
+      {
+           //rIndex = this.rowIndex;
+         id=this.cells[0].innerHTML;
+         document.getElementById("dialog").style.display="";
+         document.cookie = "id="+id;
+         mas_info(id);
+         console.log("VERGA");
+      };
+  }
 }
+
+function mas_info(identificador)
+{ let info=document.getElementById("contenido");
+  const xmlhttp = new XMLHttpRequest();
+  xmlhttp.onload = function() {
+    info.innerHTML=this.responseText;
+  }
+xmlhttp.open("GET", "../../BD/obtener_info.php?q="+identificador);
+xmlhttp.send();
+
+}
+
+
+function actualizar()
+{
+  let opc=document.getElementById("opc").value;
+  let id=getCookie("id")
+  let info=document.getElementById("contenido");
+  if(opc!=0)
+  {
+    const xmlhttp = new XMLHttpRequest();
+    xmlhttp.onload = function() {
+  document.getElementById("dialog").style.display="none";
+     
+    }
+  xmlhttp.open("GET", "../../BD/actualizar_soli.php?q="+opc+"&p="+id);
+  xmlhttp.send();
+  }
+  else
+  {
+    document.getElementById("error").innerHTML="Elija una opcion para esta solicitud"
+  }
+
+}
+
+function cerrar()
+{
+  document.getElementById("dialog").style.display="none";
+}
+
+
+
+function getCookie(name) {
+  var nameEQ = name + "=";
+  var ca = document.cookie.split(';');
+  for(var i=0;i < ca.length;i++) {
+      var c = ca[i];
+      while (c.charAt(0)==' ') c = c.substring(1,c.length);
+      if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+  }
+  return null;
+}
+
 

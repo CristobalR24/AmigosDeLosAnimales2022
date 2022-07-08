@@ -17,13 +17,15 @@ class obtener
         $Tipo=$row["Tipo_Formulario"];
         $nombre_adop=$row["Nombre_Adop"];
         $fecha=$row["Fecha"];
+        $tipo_m=$row["Tipo"];
         echo "<tr>";
         echo "<td>".$ID."</td>";
         echo "<td>".$mascota."</td>";
         echo "<td>".$Tipo."</td>";
         echo "<td>".$nombre_adop."</td>";
         echo "<td>".$fecha."</td>";
-        echo "<td><button class='btn btn-primary' id='in' onclick='testeo()'>Ver información</button></td>";
+        echo "<td>".$tipo_m."</td>";
+        echo "<td><button class='btn btn-primary' id='in' onclick='info()'>Ver información</button></td>";
             // <td><button class='btn btn-primary' id="in" onclick="test()">Ver información</button></td>
                
 
