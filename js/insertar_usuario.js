@@ -6,14 +6,14 @@ function pass_check()
     if(pass1!=pass2||pass2!=pass1)
      {
         document.getElementById("btn_crear").innerHTML="Las contraseñas no coinciden";
-        //document.getElementById("btn_crear").disabled = false;
+      
        
     }
 
     else
     {   
         document.getElementById("btn_crear").innerHTML="Crear Usuario";
-       // document.getElementById("btn_crear").disabled = true;
+     
     }
 
 
@@ -22,21 +22,21 @@ function pass_check()
 
 function nom_check()
 {
-    //let check = /^[a-zA-Z\s]+$/;
+   
     let regex = /^[a-zA-Z\s]+$/;
     let nom=document.getElementById("nombre").value;
     console.log(nom.length);
     if(nom.length==0||regex.test(nom))
     { 
         document.getElementById("btn_crear").innerHTML="Crear Usuario";
-        //document.getElementById("btn_crear").disabled = false;
+      
       
     }
 
     else
         {
             document.getElementById("btn_crear").innerHTML="Nombre no valido";
-            //document.getElementById("btn_crear").disabled = true;
+           
            
         }
         
@@ -57,16 +57,15 @@ function enviar()
     xmlhttp.onload = function() {
        respuesta=this.responseText;
         if(respuesta==0)
-        { //alert("ERORoooooo");
-        
+        { 
             document.getElementById("respuesta").innerHTML="No pudimos crear este usuario, intenta de nuevo";
+            document.getElementById("respuesta").style.color="black";
 
         }
         else if(respuesta==1)
-        { //alert("NO EROR");
-            
-            document.getElementById("correcto").innerHTML="Usuario creado correctamente";
-            
+        {
+            document.getElementById("respuesta").innerHTML="Usuario creado correctamente";
+            document.getElementById("respuesta").style.color="#068b06";
             document.getElementById("nombre").value="";
             document.getElementById("cedula").value="";
             document.getElementById("password").value="";
@@ -74,8 +73,9 @@ function enviar()
 
         }
         else if(respuesta==1062)
-        {  // alert("EROR");
-            document.getElementById("respuesta").innerHTML="Esta contraseña o cédula ya se encuentra en uso";
+        {  
+            document.getElementById("respuesta").innerHTML="Esta contraseña o Cedula ya se encuentra en uso";
+            document.getElementById("respuesta").style.color="black";
         }
 
     
@@ -86,5 +86,7 @@ function enviar()
         }
 
         else 
-        document.getElementById("respuesta").innerHTML="Rellene todos los campos del formulario";
+            {document.getElementById("respuesta").innerHTML="Rellene todos los campos del formulario";
+            document.getElementById("respuesta").style.color="black";}
+
 }
