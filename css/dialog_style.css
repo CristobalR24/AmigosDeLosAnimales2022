@@ -1,16 +1,22 @@
 #dialog
-{
+{ position: absolute;
+  margin: auto;
     border-radius:2rem;
     justify-content: center;
-    
+    z-index: 2;
+    position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
     border-width: 0.1rem;
-   display:inline;}
+   display:inline-block;}
 
 #elemento
 
 {
     padding: 1rem;
-    
     display: inline-block;
 }
 

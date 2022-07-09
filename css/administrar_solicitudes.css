@@ -13,31 +13,19 @@ div button{
     src: url("../fonts/HelveticaNeue-Bd.otf");
 }
 
-/* a{
-    font-family: 'helvetica-bold';
-    color: #000000;
-    text-decoration: none;
-} */
-.a_color
-{
+a{
     font-family: 'helvetica-bold';
     color: #000000;
     text-decoration: none;
 }
-.a_color:hover
-{
+
+a:hover{
     color: var(--azul_borde);
     text-decoration: none;
-    cursor: pointer;
 }
-/* a:hover{
-    color: var(--azul_borde);
-    text-decoration: none;
-} */
 
 .table {
     color: #000000;
-  
 }
 
 .table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
@@ -109,22 +97,6 @@ div button{
 
 .col-sm-2, .col-sm-3{
     margin-top: 10px;
-}
-
-table tr td
-{
-    pointer-events:none;
-    user-select: text;
-    
-}
-
-
-table td:hover::after{
-    cursor:text;
-}
-#in
-{
-    pointer-events: all;
 }
 
 

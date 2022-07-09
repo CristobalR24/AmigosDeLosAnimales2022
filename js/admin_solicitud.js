@@ -2,7 +2,7 @@ window.onload = function() {
 
     const element = document.querySelector('form');
     document.getElementById("dialog").style.display="none";
-element.addEventListener('submit', event => {
+  element.addEventListener('submit', event => {
   event.preventDefault();
  
 });
@@ -52,7 +52,7 @@ function filtro_tipo_form(formt) {
   let filtro =formt.toUpperCase();
   let fila = document.querySelector("#tbl tbody").rows;
   
-  for (let i = 0; i < fila.length; i++) {
+  for (let i = 1; i < fila.length; i++) {
       let Col = fila[i].cells[2].textContent.toUpperCase();
       if (Col.indexOf(filtro) > -1) {
         fila[i].style.display = "";
@@ -68,7 +68,7 @@ function filtro_tipo_mascota(type_pet) {
  
   let fila = document.querySelector("#tbl tbody").rows;
   
-  for (let i = 0; i < fila.length; i++) {
+  for (let i = 1; i < fila.length; i++) {
       let Col = fila[i].cells[5].textContent.toUpperCase();
      
       if (Col.indexOf(filtro) > -1) {

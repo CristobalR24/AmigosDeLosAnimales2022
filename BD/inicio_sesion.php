@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 include('conexion.php');
 
 try{
@@ -26,6 +26,7 @@ if($resultado>0)
 {
    echo(1);//se consigue informacion en la base de datos
     setcookie("usuario",$Ced);
+    $_SESSION['sw']=true;
 }
 else
 {

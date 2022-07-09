@@ -165,6 +165,7 @@ strong:hover{
 }
 
 #tabla:hover{
+    cursor: pointer;
     color: var(--azul_borde);
     border-color: var(--azul_borde);
     font-weight: bold;
@@ -272,3 +273,4 @@ input::placeholder{
     background-color: #0167F8;
     border-style: none;
 }
+
